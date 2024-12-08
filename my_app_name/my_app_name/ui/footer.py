@@ -7,35 +7,17 @@ def footer() -> rx.Component:
                 rx.hstack(
                     rx.image(
                         src="/icon_2.png",
-                        width="3em",
+                        width="2em",
                         height="auto",
                         border_radius="25%",
                     ),
                     rx.text(
-                        "Contact: ",
-                        size="3",
-                        white_space="nowrap",
-                        weight="medium",
-                        font_family="MyFont",
-                        font_size="3em",
-                    ),
-                    rx.vstack(
-                    rx.text(
-                        "s2320387@u.tsukuba.ac.jp",
+                        "Copyright © Yue in 2024",
                         size="3",
                         white_space="nowrap",
                         weight="medium",
                         font_family="MyFont",
                         font_size="1em",
-                    ),
-                    rx.text(
-                        "YU.Yueying@nims.go.jp",
-                        size="3",
-                        white_space="nowrap",
-                        weight="medium",
-                        font_family="MyFont",
-                        font_size="1em",
-                    ),
                     ),
                     spacing="2",
                     align="center",
@@ -50,7 +32,9 @@ def footer() -> rx.Component:
                         src="/footer.png",
                         width="6em",
                         height="auto",
-                        border_radius="25%",
+                        # border_radius="25%",
+                        
+                        border_radius="15px 50px",
                     ),
                 spacing="4",
                 flex_direction=["column", "column", "row"],

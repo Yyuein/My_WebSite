@@ -34,13 +34,13 @@ def navbar_logo() ->rx.Component:
     return  rx.hstack(
                     rx.image(
                         src="/icon_2.png",
-                        width="4em",
+                        width="2.5em",
                         height="auto",
                     ),
-                    rx.text("YUE in",
+                    rx.text("La vie est ailleurs",
                     weight="medium",
                     font_family="MyFont",
-                    font_size="3em",
+                    font_size="1.5em",
                     color="#8f5a50",),
                     
                 align_items="center",
@@ -66,7 +66,7 @@ def navbar() -> rx.Component:
                         "ABOUT", "/about.png", "/about"
                     ),
                     navbar_images_item(
-                        "WORKES", "/works.png", "/WORKES"
+                        "WORKES", "/workes.png", "/workes"
                     ),
                     spacing="6",
                 ),
@@ -99,7 +99,7 @@ def navbar() -> rx.Component:
             ),
         ),
         bg="#d5d9de",
-        padding="1em",
+        padding="0.3em",
         # position="fixed",
         # top="0px",
         # z_index="5",
