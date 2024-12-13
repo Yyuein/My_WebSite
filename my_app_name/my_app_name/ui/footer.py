@@ -18,6 +18,7 @@ def footer() -> rx.Component:
                         weight="medium",
                         font_family="MyFont",
                         font_size="1em",
+                        color="#4b4641"
                     ),
                     spacing="2",
                     align="center",

@@ -190,7 +190,7 @@ def home() -> rx.Component:
                     rx.box(
                         rx.link(
                             rx.button(
-                                "Data analysis",
+                                "Projects",
                                 style={
                                     "width": "100px",  # 设置按钮宽度
                                     "height": "50px",  # 设置按钮高度

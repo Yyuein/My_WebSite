@@ -130,7 +130,8 @@ def about() -> rx.Component:
                                             "border": "transparent",  # 设置边框颜色
                                         },
                                     ),
-                                    href="https://www.nefu.edu.cn/",target="_blank",
+                                    href="https://www.nefu.edu.cn/",
+                                    target="_blank",
                                 ),
                                 width="100%",
                                 height="5%",
@@ -158,7 +159,8 @@ def about() -> rx.Component:
                                             "border": "transparent",  # 设置边框颜色
                                         },
                                     ),
-                                    href="https://www.nims.go.jp/tsukuba/en/",target="_blank",
+                                    href="https://www.nims.go.jp/tsukuba/en/",
+                                    target="_blank",
                                 ),
                                 width="100%",
                                 height="5%",
@@ -188,7 +190,9 @@ def about() -> rx.Component:
                     width="100%",
                     height="90%",
                     padding="4px",
-                    on_mouse_enter=rx.toast("Click on the university name to go to the university's website"),
+                    on_mouse_enter=rx.toast(
+                        "Click on the university name to go to the university's website"
+                    ),
                 ),
                 spacing="2",
                 padding="1em",
@@ -198,7 +202,7 @@ def about() -> rx.Component:
             ),
             rx.flex(
                 rx.box(
-                    rx.text("Data analysis"),
+                    rx.text("Projects"),
                     background_color="#d5d9de",
                     color="#ffffff",
                     text_align="center",
@@ -209,7 +213,76 @@ def about() -> rx.Component:
                 ),
                 rx.box(
                     rx.scroll_area(
-                        # on_mouse_enter=rx.toast("Mouse entered"),
+                        rx.flex(
+                            rx.card(
+                                rx.vstack(
+                                    rx.hstack(
+                                        rx.icon(
+                                            "file-code-2",
+                                            size=45,
+                                            color="#4b4641",
+                                        ),
+                                        rx.link(
+                                            rx.button(
+                                                "Data Analysis",
+                                                size="4",
+                                                style={
+                                                    "padding": "5px 5px",  # 内边距，调整按钮内部文字与边框的距离
+                                                    "font-size": "35px",
+                                                    "color": "#ffffff",  # 设置文字颜色
+                                                    "background-color": "#4b4641",  # 设置按钮背景颜色
+                                                    "border": "transparent",  # 设置边框颜色
+                                                },
+                                            ),
+                                            href="https://github.com/Yyuein/Data-Analysis",
+                                            target="_blank",
+                                        ),
+                                        align_items="center",
+                                        justify="center",
+                                        spacing="2",
+                                    ),
+                                    rx.hstack(
+                                        rx.markdown(
+                                            "![Jupyter](https://img.shields.io/badge/Jupyter-F37726?style=for-the-badge&logo=jupyter&logoColor=white)"
+                                            "![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)"
+                                        ),
+                                        align_items="center",
+                                        justify="center",
+                                    ),
+                                ),
+                                align_items="center",
+                                justify="center",
+                                width="100%",
+                                height="30%",
+                            ),
+                            rx.card(
+                                rx.hstack(
+                                    rx.icon(
+                                        "loader",
+                                        size=100,
+                                        color="#4b4641",
+                                    ),
+                                    rx.text(
+                                        "More contents coming soon~",
+                                        font_size="2em",
+                                        text_align="center",
+                                        justify="center",
+                                        align_items="center",
+                                        color="#4b4641",
+                                    ),
+                                    align_items="center",
+                                    justify="center",
+                                    spacing="2",
+                                ),
+                                align_items="center",
+                                justify="center",
+                                width="100%",
+                                height="70%",
+                            ),
+                            width="100%",
+                            height="100%",
+                            flex_direction="column",
+                        ),
                         type="hover",
                         scrollbars="vertical",
                         style={"overflow": "auto"},
