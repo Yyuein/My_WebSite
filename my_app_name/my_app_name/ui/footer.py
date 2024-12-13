@@ -30,13 +30,11 @@ def footer() -> rx.Component:
                 ),
                 rx.image(
                         src="/footer.png",
-                        width="6em",
+                        width="4.5em",
                         height="auto",
-                        # border_radius="25%",
-                        
-                        border_radius="15px 50px",
+                        border_radius="25%",
                     ),
-                spacing="4",
+                spacing="5",
                 flex_direction=["column", "column", "row"],
                 width="100%",
             ),

@@ -3,18 +3,32 @@ import reflex as rx
 from rxconfig import config
 from my_app_name.template.template import base_page
 
-@rx.page(route='/workes')
+
+@rx.page(route="/workes")
 def workes() -> rx.Component:
     return base_page(
-        rx.container(
-            rx.vstack(
-                rx.hstack(
-                    rx.image(src="/icon_2.png", width="100px", height="auto"),
-                    rx.heading("workes", size="9"),
-                    ),
-                spacing="5",
-                justify="center",
-                min_height="85vh",
+        rx.flex(
+            rx.box(
+                background_color="#d5d9de",
+                color="#ffffff",
+                font_size="1.5em",
+                width="100%",
+                height="90%",
+                padding="4px",
             ),
+            rx.box(
+                background_color="#d5d9de",
+                color="#ffffff",
+                font_size="1.5em",
+                width="100%",
+                height="90%",
+                padding="4px",
+            ),
+            width="100%",
+            height="85vh",
+            spacing="3",
+            padding="1em",
+            flex_direction="column",
+            font_family="MyFont",
         )
     )

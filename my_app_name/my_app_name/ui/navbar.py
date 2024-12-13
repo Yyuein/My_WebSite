@@ -99,7 +99,7 @@ def navbar() -> rx.Component:
             ),
         ),
         bg="#d5d9de",
-        padding="0.3em",
+        padding="0.2em",
         # position="fixed",
         # top="0px",
         # z_index="5",
