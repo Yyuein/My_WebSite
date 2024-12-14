@@ -2,6 +2,7 @@ import reflex as rx
 from rxconfig import config
 from my_app_name.template.template import base_page
 
+
 @rx.page(route="/")
 def home() -> rx.Component:
     return base_page(
@@ -18,7 +19,12 @@ def home() -> rx.Component:
                         height="auto",
                         border_radius="50px 50px",
                     ),
-                    rx.heading("Yue in", font_family="MyFont", font_size="6em"),
+                    rx.heading(
+                        "Yue in",
+                        font_family="MyFont",
+                        font_size="6em",
+                        color="black",
+                    ),
                     width="100%",
                     height="30%",
                     align_items="center",
@@ -48,7 +54,7 @@ def home() -> rx.Component:
                     ),
                     background_color="#d5d9de",
                     font_size="1em",
-                    color="black",
+                    color="#4b4641",
                     width="100%",
                     height="10%",
                     align_items="center",
@@ -98,7 +104,7 @@ def home() -> rx.Component:
                         ),
                         rx.box(
                             rx.image(
-                                src="icon.jpg",
+                                src="dd.png",
                                 style={
                                     "position": "absolute",
                                     "transform": "translate(0%, 0%)",
@@ -126,7 +132,7 @@ def home() -> rx.Component:
                             "display": "flex",
                             "justify-content": "center",
                             "align-items": "center",
-                            "background_color":"#d5d9de"
+                            "background_color": "#d5d9de",
                         },
                     ),
                     rx.box(
@@ -156,7 +162,7 @@ def home() -> rx.Component:
                         ),
                         rx.box(
                             rx.image(
-                                src="icon.jpg",
+                                src="ed.png",
                                 style={
                                     "position": "absolute",
                                     "transform": "translate(0%, 0%)",
@@ -184,7 +190,7 @@ def home() -> rx.Component:
                             "display": "flex",
                             "justify-content": "center",
                             "align-items": "center",
-                            "background_color":"#d5d9de"
+                            "background_color": "#d5d9de",
                         },
                     ),
                     rx.box(
@@ -214,7 +220,7 @@ def home() -> rx.Component:
                         ),
                         rx.box(
                             rx.image(
-                                src="icon.jpg",
+                                src="pj.png",
                                 style={
                                     "position": "absolute",
                                     "transform": "translate(0%, 0%)",
@@ -242,7 +248,7 @@ def home() -> rx.Component:
                             "display": "flex",
                             "justify-content": "center",
                             "align-items": "center",
-                            "background_color":"#d5d9de"
+                            "background_color": "#d5d9de",
                         },
                     ),
                     height="40%",

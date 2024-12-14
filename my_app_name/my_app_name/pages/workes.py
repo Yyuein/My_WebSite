@@ -88,34 +88,39 @@ def workes() -> rx.Component:
             ),
             rx.flex(
                 rx.box(
-                    rx.image(
-                        src="/workes_1.png",
-                        width="100%",
-                        height="100%",
-                        style={
-                            "display": "block",
-                            "margin": "auto",
-                        },
+                    rx.vstack(
+                        rx.icon(
+                            "coffee",
+                            size=130,
+                            color="#8f5a50",
+                        ),
+                        rx.text(
+                            "Still working on it.",
+                            font_size="2.5em",
+                            color="#8f5a50",
+                        ),
+                        align_items="center",
+                        justify="center",
+                        padding="5px",
                     ),
+                    align_items="center",
+                    justify="center",
                     background_color="#d5d9de",
-                    color="#ffffff",
                     width="30%",
                     height="100%",
-                    padding="5px",
+                    padding="1em",
                 ),
                 rx.flex(
                     rx.box(
                         rx.dialog.root(
                             rx.dialog.trigger(
-                            rx.heading('Superb anti-icing surface by infusing PG into a superhydrophobic skeleton composed of ZnO and PDMS', 
-                            font_size="0.91em",
-                            )
+                                rx.heading(
+                                    "Superb anti-icing surface by infusing PG into a superhydrophobic skeleton composed of ZnO and PDMS",
+                                    font_size="0.91em",
+                                )
                             ),
                             rx.dialog.content(
                                 rx.dialog.title("This work is still under research!"),
-                                # rx.dialog.description(
-                                #     "This is a dialog component. You can render anything you want in here.",
-                                # ),
                                 rx.dialog.close(
                                     rx.button("Close", size="3"),
                                 ),
@@ -139,7 +144,7 @@ def workes() -> rx.Component:
                                 align_items="top",
                             ),
                             rx.image(
-                                src="/abstract_1.jpg",
+                                src="/abstract_2.png",
                                 width="100%",
                                 height="auto",
                                 style={
