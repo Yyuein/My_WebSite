@@ -22,7 +22,7 @@ def about() -> rx.Component:
                     rx.scroll_area(
                         rx.image(
                             src="/1.jpg",
-                            width="370px",
+                            width="100%",
                             height="auto",
                             style={
                                 "display": "block",  # 将图片作为块元素
@@ -31,7 +31,7 @@ def about() -> rx.Component:
                         ),
                         rx.image(
                             src="/2.jpg",
-                            width="370px",
+                            width="100%",
                             height="auto",
                             style={
                                 "display": "block",
@@ -40,7 +40,7 @@ def about() -> rx.Component:
                         ),
                         rx.image(
                             src="/3.jpg",
-                            width="370px",
+                            width="100%",
                             height="auto",
                             style={
                                 "display": "block",
@@ -49,7 +49,7 @@ def about() -> rx.Component:
                         ),
                         rx.image(
                             src="/4.jpg",
-                            width="370px",
+                            width="100%",
                             height="auto",
                             style={
                                 "display": "block",
@@ -58,7 +58,7 @@ def about() -> rx.Component:
                         ),
                         rx.image(
                             src="/5.jpg",
-                            width="370px",
+                            width="100%",
                             height="auto",
                             style={
                                 "display": "block",
@@ -67,7 +67,7 @@ def about() -> rx.Component:
                         ),
                         rx.image(
                             src="/6.jpg",
-                            width="370px",
+                            width="100%",
                             height="auto",
                             style={
                                 "display": "block",
@@ -76,7 +76,7 @@ def about() -> rx.Component:
                         ),
                         rx.image(
                             src="/7.jpg",
-                            width="370px",
+                            width="100%",
                             height="auto",
                             style={
                                 "display": "block",
@@ -227,12 +227,16 @@ def about() -> rx.Component:
                                                 "Data Analysis",
                                                 size="4",
                                                 style={
+                                                    "width": "100%",  # 设置按钮宽度
+                                                    "height": "50%",
                                                     "padding": "5px 5px",  # 内边距，调整按钮内部文字与边框的距离
-                                                    "font-size": "35px",
+                                                    "font-size": "30px",
                                                     "color": "#ffffff",  # 设置文字颜色
                                                     "background-color": "#4b4641",  # 设置按钮背景颜色
                                                     "border": "transparent",  # 设置边框颜色
                                                 },
+                                                align_items="center",
+                                                justify="center",
                                             ),
                                             href="https://github.com/Yyuein/Data-Analysis",
                                             target="_blank",
