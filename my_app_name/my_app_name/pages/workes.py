@@ -32,7 +32,7 @@ def workes() -> rx.Component:
                                 """Exploration of antifouling 
                                         zwitterionic polyimide ultrafiltration membrane 
                                         based on novel aromatic diamine monomer""",
-                                font_size="0.91em",
+                                font_size="1.6em",
                             ),
                             href="https://www.sciencedirect.com/science/article/abs/pii/S1383586620322127",
                             target="_blank",
@@ -116,7 +116,7 @@ def workes() -> rx.Component:
                             rx.dialog.trigger(
                                 rx.heading(
                                     "Superb anti-icing surface by infusing PG into a superhydrophobic skeleton composed of ZnO and PDMS",
-                                    font_size="0.91em",
+                                    font_size="1.6em",
                                 )
                             ),
                             rx.dialog.content(

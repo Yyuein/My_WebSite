@@ -241,6 +241,10 @@ def about() -> rx.Component:
                                             href="https://github.com/Yyuein/Data-Analysis",
                                             target="_blank",
                                         ),
+                                        rx.text(
+                                            "👈",
+                                            size='7',
+                                        ),
                                         align_items="center",
                                         justify="center",
                                         spacing="2",
