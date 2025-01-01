@@ -1,8 +1,8 @@
 import reflex as rx
 from rxconfig import config
-from my_app_name.pages.home import home
-from my_app_name.pages.about import about
-from my_app_name.pages.workes import workes
+from yue_in.pages.home import home
+from yue_in.pages.about import about
+from yue_in.pages.workes import workes
 
 class State(rx.State):
     """The app state."""
