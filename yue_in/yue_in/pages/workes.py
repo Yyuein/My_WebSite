@@ -1,7 +1,7 @@
 import reflex as rx
 
 from rxconfig import config
-from my_app_name.template.template import base_page
+from yue_in.template.template import base_page
 
 
 @rx.page(route="/workes")
