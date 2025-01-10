@@ -241,9 +241,10 @@ def about() -> rx.Component:
                                             href="https://github.com/Yyuein/Data-Analysis",
                                             target="_blank",
                                         ),
-                                        rx.text(
-                                            "👈",
-                                            size='7',
+                                        rx.icon(
+                                            "chevrons-left",
+                                            size=45,
+                                            color="#4b4641",
                                         ),
                                         align_items="center",
                                         justify="center",
@@ -253,6 +254,56 @@ def about() -> rx.Component:
                                         rx.markdown(
                                             "![Jupyter](https://img.shields.io/badge/Jupyter-F37726?style=for-the-badge&logo=jupyter&logoColor=white)"
                                             "![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)"
+                                        ),
+                                        align_items="center",
+                                        justify="center",
+                                    ),
+                                ),
+                                align_items="center",
+                                justify="center",
+                                width="100%",
+                                height="30%",
+                            ),
+                            rx.card(
+                                rx.vstack(
+                                    rx.hstack(
+                                        rx.icon(
+                                            "file-code-2",
+                                            size=45,
+                                            color="#4b4641",
+                                        ),
+                                        rx.link(
+                                            rx.button(
+                                                "Expense Log",
+                                                size="4",
+                                                style={
+                                                    "width": "100%",  # 设置按钮宽度
+                                                    "height": "50%",
+                                                    "padding": "5px 5px",  # 内边距，调整按钮内部文字与边框的距离
+                                                    "font-size": "30px",
+                                                    "color": "#ffffff",  # 设置文字颜色
+                                                    "background-color": "#4b4641",  # 设置按钮背景颜色
+                                                    "border": "transparent",  # 设置边框颜色
+                                                },
+                                                align_items="center",
+                                                justify="center",
+                                            ),
+                                            href="https://github.com/Yyuein/expense_log",
+                                            target="_blank",
+                                        ),
+                                        rx.icon(
+                                            "chevrons-left",
+                                            size=45,
+                                            color="#4b4641",
+                                        ),
+                                        align_items="center",
+                                        justify="center",
+                                        spacing="2",
+                                    ),
+                                    rx.hstack(
+                                        rx.markdown(
+                                            "![Dart](https://img.shields.io/badge/Dart-00579C?style=for-the-badge&logo=dart&logoColor=white)"
+                                            "![flutter](https://img.shields.io/badge/Flutter-54C5F8?style=for-the-badge&logo=flutter&logoColor=white)"
                                         ),
                                         align_items="center",
                                         justify="center",
