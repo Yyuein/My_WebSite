@@ -8,7 +8,7 @@
 # 初始使用
 
 ```
-cd my_app_name
+cd My_WebSite
 python3 -m venv .venv
 source .venv/bin/activate
 pip install reflex
@@ -17,6 +17,6 @@ pip install reflex
 # 启动
 
 ```
-cd my_app_name
+cd My_WebSite
 reflex run
 ```
