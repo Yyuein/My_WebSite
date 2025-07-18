@@ -23,6 +23,7 @@ jobs:
           pip install reflex==0.8.2
 
       - name: Build project
+        run: cd yue_in
         run: reflex export
 
       - name: Unzip frontend.zip
