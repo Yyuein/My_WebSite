@@ -1,5 +1,4 @@
 import reflex as rx
-from rxconfig import config
 
 def footer() -> rx.Component:
     return rx.el.footer(
@@ -29,7 +28,7 @@ def footer() -> rx.Component:
                     ],
                     width="100%",
                 ),
-                rx.color_mode.button(),
+                # rx.color_mode.button(),
                 rx.image(
                         src="/footer.png",
                         width="4.5em",

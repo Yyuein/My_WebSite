@@ -1,5 +1,4 @@
 import reflex as rx
-from rxconfig import config
 
 def navbar_icons_item(
     text: str, icon: str, url: str
@@ -66,7 +65,7 @@ def navbar() -> rx.Component:
                         "ABOUT", "/about.png", "/about"
                     ),
                     navbar_images_item(
-                        "WORKES", "/workes.png", "/workes"
+                        "WORKS", "/works.png", "/works"
                     ),
                     spacing="6",
                 ),
@@ -89,7 +88,7 @@ def navbar() -> rx.Component:
                             "ABOUT", "/about.png", "/ABOUT"
                         ),
                         navbar_images_item(
-                            "WORKES", "/works.png", "/WORKES"
+                            "works", "/works.png", "/works"
                         ),
                     ),
                     justify="end",
