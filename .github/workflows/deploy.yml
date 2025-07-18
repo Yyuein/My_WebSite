@@ -2,7 +2,7 @@ name: Deploy Reflex App to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [deploy]
 
 jobs:
   build-and-deploy:
