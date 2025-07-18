@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:3000/home</loc>
+    <loc>./home</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/about</loc>
+    <loc>./about</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/works</loc>
+    <loc>./works</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/</loc>
+    <loc>./</loc>
   </url>
 </urlset>
