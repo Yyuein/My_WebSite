@@ -232,8 +232,7 @@ def home() -> rx.Component:
                         "/works",
                     ),
                     paper_card(
-                        """Superb anti-icing surface by infusing PG into a superhydrophobic skeleton
-                        composed of ZnO and PDMS""",
+                        """Antifreeze-infused superhydrophobic surface with superb anti-icing and anti-frosting performance""",
                         "/works",
                     ),
                     height={"base": "54%", "md": "40%"},
