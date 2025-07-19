@@ -39,6 +39,11 @@ HEADING_BOX_STYLE = {
     "display": "flex",
     "align_items": "center",
     "justify_content": "flex-start",
+    "_hover": {
+            "background_color": COLOR_PALETTE["card_background"], 
+            "box_shadow": "0 6px 15px rgba(0, 0, 0, 0.3)",
+            "transform": "translateY(-2px)",
+    },
 }
 
 TEXT_CONTENT_BOX_STYLE = {
@@ -174,37 +179,11 @@ def works() -> rx.Component:
                 abstract_image_src="/abstract_1.jpg",
                 link_href="https://www.sciencedirect.com/science/article/abs/pii/S1383586620322127",
             ),
-            rx.flex(
-                rx.box(
-                    rx.vstack(
-                        rx.icon(
-                            "coffee",
-                            size=100,
-                            color=COLOR_PALETTE["accent_color_1"],
-                        ),
-                        rx.text(
-                            "Still working on it.",
-                            font_size="2em",
-                            color=COLOR_PALETTE["accent_color_1"],
-                            text_align="center",
-                        ),
-                        align_items="center",
-                        justify="center",
-                        spacing="3",
-                    ),
-                    **IMAGE_BOX_STYLE,
-                ),
-                work_text_content_card(
-                    title="Superb anti-icing surface by infusing PG into a superhydrophobic skeleton composed of ZnO and PDMS",
-                    abstract_image_src="/abstract_2.png",
-                    is_dialog=True,
-                ),
-                spacing="7",
-                padding="2em",
-                flex_direction="row",
-                align_items="stretch",
-                height="50vh",
-                width="100%",
+            work_item_row(
+                image_src="/works_2.png",
+                title="""Antifreeze-infused superhydrophobic surface with superb anti-icing and anti-frosting performance""",
+                abstract_image_src="/abstract_2.png",
+                link_href="https://pubs.acs.org/doi/abs/10.1021/acs.langmuir.5c01983",
             ),
             width="100%",
             height="auto",
