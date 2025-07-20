@@ -30,7 +30,6 @@ jobs:
       - name: Unzip frontend.zip
         run: |
           unzip yue_in/frontend.zip -d public
-          python fix_reflex_paths.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
